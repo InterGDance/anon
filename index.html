@@ -305,7 +305,16 @@
             To mitigate foot sliding, we present a Footwork Adaptor that utilizes trajectory displacement from adjacent frames to enable flexible footwork, 
             coupled with a Relative Forward-Kinematic loss to adjust the positioning of individual dancers' root nodes and joints.
             Extensive experiments demonstrate that our method achieves state-of-the-art results. 
-            
+            Music-driven group dance choreography has garnered attention in both cultural entertainment and academia. 
+            Recent works mainly confront two crucial shortcomings, on the one hand, they <strong>lack interaction annotations</strong>, therefore can not learn a more diverse and immersive user experience; on the other hand, most existing methods can not achieve \textbf{number-free generation}, which means they can not generate group dance with a various number of dancers. 
+            To address these issues, we present <strong>InterGDance</strong>, a framework that integrates interaction priors for motion control and enables number-free generation.
+            Our main motivation is employing human priors to efficiently guide the interaction and expansion of dancers.
+            Specifically, to overcome the lack of interaction annotations, 
+            we introduce a rule-based method for classifying group dance patterns and labeling interactions into distinct categories. 
+            To achieve number-free generation, 
+            we propose Expansion Sampling to maintain harmonious dancer movements when extending the number of participants.
+            Additionally, the incorporation of our novel Mamba-Transformer hybrid structure strengthens the model’s performance.
+            Extensive experiments demonstrate that our method achieves state-of-the-art results. 
         </p>
     </section>
 
@@ -516,25 +525,11 @@
         <div class="image-container">
             <img src="resources/pipline.png" alt="Image 2">
             <p>
-                Our framework consists of two main components: the Dance-Beat Navigator (DBN) and Trajectory-Controllable Diffusion (TCDiff). 
-                To address dancer ambiguity, initially, we employ DBN to model dancer positions, as dancers' coordinates exhibit distinct differences and are less prone to confusion. 
-                Subsequently, TCDiff utilizes this result for conditional diffusion to generate corresponding dance movements. 
-                During this process, a fusion projection enhances group information before inputting it into the multi-dance transformer, while a footwork adaptor adjusts the final footwork.
+                Overview of our InterGDance pipeline. Initially, our rule-based classification method splits the dataset by interaction patterns and assigns corresponding labels. Subsequently, InterGDance uses these labels for controllable interaction generation. 
             <p>
         </div>
     </section>
 
-    <section>
-        <h2>User Study</h2>
-        <div class="image-container">
-            <img src="resources/User_Study.jpg" alt="Image 2">
-            <p>
-                User study results based on four criteria: motion realism, music-motion correlation, 
-                formation realism, and harmony of dancers. Our model has garnered greater user favor, 
-                showcasing our superiority in aesthetic appeal.
-            </p>
-        </div>
-    </section>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
