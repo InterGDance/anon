@@ -311,17 +311,7 @@
          
         </div>
     </header>
-
-    <section>
-        <div class="video-container" style="text-align: center;">
-            <div class="video" style="width: 60%; margin: 0 auto;">
-                <video autoplay loop muted controls>
-                    <source src="resource\freecompress-InterGDance.mp4" type="video/mp4">
-                </video>
-            </div>   
-        </div>
-    </section>
-
+    
     <section>
         <h2>Abstract</h2>
         <p> Music-driven group dance choreography has garnered attention in both cultural entertainment and academia. 
@@ -338,17 +328,20 @@
     </section>
 
     <section>
-        <h2>Generate Results</h2>
+        <div class="video-container" style="text-align: center;">
+            <div class="video" style="width: 60%; margin: 0 auto;">
+                <video autoplay loop muted controls>
+                    <source src="resource\problem_def.mp4" type="video/mp4">
+                </video>
+            </div>   
+        </div>
+    </section>
+
+    <section>
+        <h2>Generation Results</h2>
         <h4><span style="color: rgb(84, 84, 247);">2</span>-Dancers</span></h4>
         <div class="video-container">
             <div class="slider-container">
-                <!-- <div class="slider-item" data-slider-index="0" data-cloned="true">
-                    <div class="video">
-                        <video autoplay loop muted controls>
-                            <source src="resource\2\23_5OOEKa0li0A_02_0_1890_slice60.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div> -->
                 <div class="slider-item" data-slider-index="1" data-cloned="true">
                     <div class="video">
                         <!-- <p>"Unsimilar"</p> -->
@@ -504,6 +497,61 @@
         </div>
     </section>
 
+    <section>
+        <h2>Label Control</h2>
+        <div class="video-container">
+            <div class="slider-container">
+                <div class="slider-item" data-slider-index="0" data-cloned="true">
+                    <div class="video">
+                        <p class="left-adjust">"Similar"</p>
+                        <video autoplay loop muted controls>
+                            <source src="resource\swap_similar\similar.mkv" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="slider-item" data-slider-index="1" data-cloned="true">
+                    <div class="video">
+                        <p class="left-adjust">"Swap"</p>
+                        <video autoplay loop muted controls>
+                            <source src="resource\swap_similar\swap.mkv" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+        <div class="video-container">
+            <div class="slider-container">
+                <div class="slider-item" data-slider-index="0" data-cloned="true">
+                    <div class="video">
+                        <p class="left-adjust">"Similar"</p>
+                        <video autoplay loop muted controls>
+                            <source src="resource\unsimilar_similar\similar.mkv" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="slider-item" data-slider-index="1" data-cloned="true">
+                    <div class="video">
+                        <p class="left-adjust">"Unsimilar"</p>
+                        <video autoplay loop muted controls>
+                            <source src="resource\unsimilar_similar\unsimilar.mkv" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+    
+
+    </section>
+
+    <section>
+        <h2>Long-term Generation</h2>
+        <div class="video-container" style="text-align: center;">
+            <div class="video" style="width: 30%; margin: 0 auto;">
+                <video autoplay loop muted controls>
+                    <source src="resource\InterGDance_LONG.mp4" type="video/mp4">
+                </video>
+            </div>   
+        </div>
+    </section>
 
     <section>
         <h2>Framework</h2>
@@ -512,6 +560,17 @@
             <p>
                 Overview of our InterGDance pipeline. Initially, our rule-based classification method splits the dataset by interaction patterns and assigns corresponding labels. Subsequently, InterGDance uses these labels for controllable interaction generation. 
             <p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Demo</h2>
+        <div class="video-container" style="text-align: center;">
+            <div class="video" style="width: 60%; margin: 0 auto;">
+                <video autoplay loop muted controls>
+                    <source src="resource\freecompress-InterGDance.mp4" type="video/mp4">
+                </video>
+            </div>   
         </div>
     </section>
 
