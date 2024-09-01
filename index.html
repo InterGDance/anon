@@ -253,13 +253,13 @@
         }
 
         /* FIXME: 文字调整部分 */
-        /* 负值让文字向左移动，调整数值达到理想效果 */
+        /* 负值让文字向左移动，调整数值达到理想效果: 不行, 屏幕大小一变就完蛋了 */
         .left-adjust {
             margin-left: 250px; /* 负值让文字向左移动，调整数值达到理想效果 */
         }   
         .centered-text {
     color: rgb(40, 39, 39); /* 设置文字颜色 */
-    font-size: 16px; /* 调整字体大小 */
+    font-size: 18px; /* 调整字体大小 */
     text-align: center; /* 确保文字居中 */
     z-index: 10; /* 确保文字显示在视频上方 */
     pointer-events: none; /* 使文字不会影响视频控件的操作 */
