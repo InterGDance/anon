@@ -311,7 +311,7 @@
 
 <body>
     <header>
-        <h1>InterGDance: Prior-guided Music-driven Interactable Group Choreography <br> 
+        <h1>InterGDance: Music-Driven Interaction-Controllable Group Choreography <br> 
             in a Number-Free Paradigm </h1>
         <br>
         <div id="author-list">
@@ -322,16 +322,12 @@
     
     <section>
         <h2>Abstract</h2>
-        <p> Music-driven group dance choreography has garnered attention in both cultural entertainment and academia. 
-            Recent works mainly confront two crucial shortcomings, on the one hand, they <strong>lack interaction annotations</strong>, therefore can not learn a more diverse and immersive user experience; on the other hand, most existing methods can not achieve <strong>number-free generation</strong>, which means they can not generate group dance with a various number of dancers. 
-            To address these issues, we present <strong>InterGDance</strong>, a framework that integrates interaction priors for motion control and enables number-free generation.
-            Our main motivation is employing human priors to efficiently guide the interaction and expansion of dancers.
-            Specifically, to overcome the lack of interaction annotations, 
-            we introduce a rule-based method for classifying group dance patterns and labeling interactions into distinct categories. 
-            To achieve number-free generation, 
-            we propose Expansion Sampling to maintain harmonious dancer movements when extending the number of participants.
-            Additionally, the incorporation of our novel Mamba-Transformer hybrid structure strengthens the model’s performance.
+        <p> Music-driven group dance choreography has gained significant attention in both cultural entertainment and academia. Unlike solo dance, the interactions among participants in larger ensembles foster a more immersive experience. However, existing methods either fail to scale effectively in large groups or struggle to preserve interaction patterns.
+            To address this, we introduce InterGDance, a highly scalable framework that enables control over interactions.
+            To ensure scalability, we propose a novel approach that scales to an arbitrary number of dancers by progressively adding new dancers based on the existing ensemble.
+            To facilitate interaction design, we introduce an interaction-controllable generation approach. Additionally, we present a rule-based method for automatically identifying interaction patterns, which can both provide interaction priors and enable the automated evaluation of whether the generated results conform to specific interaction patterns.
             Extensive experiments demonstrate that our method achieves state-of-the-art results. 
+            Code will be made available. 
         </p>
     </section>
 
